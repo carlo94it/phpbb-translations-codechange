@@ -90,8 +90,8 @@ function createDiff($path)
 
 			if (file_exists($directory['previous'] . $phpbb_filename) && ($phpbb_file_ext == 'php' || $phpbb_file_ext == 'htm' || $phpbb_file_ext == 'txt'))
 			{
-				$lines1 = file($directory['latest'] . $phpbb_filename);
-				$lines2 = file($directory['previous'] . $phpbb_filename);
+				$lines1 = file($directory['previous'] . $phpbb_filename);
+				$lines2 = file($directory['latest'] . $phpbb_filename);
 
 				$diff = new Diff($lines1, $lines2);
 				$fmt = new BBCodeDiffFormatter(false, 5, false);
