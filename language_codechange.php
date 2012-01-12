@@ -174,7 +174,7 @@ function DiffHeader()
 
 		foreach($files['new'] as $filename)
 		{
-			$text .= "copy {$filename} to {$filename}\n";
+			$text .= "copy language/{$iso}/{$filename} to language/{$iso}/{$filename}\n";
 		}
 
 		$text .= "\n";
