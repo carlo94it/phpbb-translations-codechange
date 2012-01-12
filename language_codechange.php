@@ -123,12 +123,12 @@ function createDiff($path)
 */
 function DiffHeader()
 {
-	global $iso, $previousVersion, $latestVersion, $author_name, $author_email, $author_realname, $author_website, $files;
+	global $iso, $previousVersion, $latestVersion, $author_username, $author_email, $author_realname, $author_website, $files;
 
 	$text = '';
 	$text .= "############################################################## \n";
 	$text .= "## Title: phpBB {$previousVersion} to phpBB {$latestVersion} Language Pack Changes [{$iso}] \n";
-	$text .= "## Author: {$author_name} < {$author_email} >" . (!empty($author_realname) ? " ({$author_realname})" : '') . (!empty($author_website) ? " ({$author_website})" : '') . " \n";
+	$text .= "## Author: {$author_username} < {$author_email} >" . (!empty($author_realname) ? " ({$author_realname})" : '') . (!empty($author_website) ? " ({$author_website})" : '') . " \n";
 	$text .= "## Description: \n";
 	$text .= "##		\n";
 	$text .= "##		\n";
