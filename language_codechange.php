@@ -38,7 +38,7 @@ $files = array(
 	'edit'	=> array()
 );
 
-header("Content-Type: text/plain");
+header("Content-Type: text/plain; charset=UTF-8");
 include('./diff_class.php');
 
 $text = createDiff($directory['latest']);
